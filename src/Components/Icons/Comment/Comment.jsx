@@ -12,8 +12,8 @@ const Comment = () => {
           fill="none"
           stroke="currentColor"
           strokeWidth="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           className="lucide lucide-message-circle"
         >
           <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />

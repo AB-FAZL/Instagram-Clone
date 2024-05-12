@@ -6,6 +6,7 @@ import Like from "../../../../Components/Icons/Like/Like";
 import Save from "../../../../Components/Icons/Save/Save";
 import Share from "../../../../Components/Icons/Share/Share";
 import Comment from "../../../../Components/Icons/Comment/Comment";
+import Emoji from "../../../../Components/Icons/Emoji/Emoji";
 
 const FeedCard = () => {
   return (
@@ -43,6 +44,49 @@ const FeedCard = () => {
               </div>
               <Save/>
             </div>
+
+            <Link to="/" className=" w-full h-auto flex items-center  gap-x-2 text-gray-200 text-base font-medium">
+            <div className="flex items-center">
+              <img src={feed.mutualFrndImg1} alt={feed.likeCount} className="w-5 h-5 rounded-full object-fill p-[1.5px] bg-black" />
+              <img src={feed.mutualFrndImg2} alt={feed.likeCount} className="w-5 h-5 rounded-full object-fill p-[1.5px] bg-black -ml-3" />
+              
+              
+              </div>
+              {
+                feed.likeCount + " likes"
+              }
+            </Link>
+
+            <div className="w-full h-auto flex item-center gap-x-1">
+              <div className="w-full h-auto text-sm text-gray-200 font-thin">
+                <Link to="/" className=" text-white font-normal me-2">
+                  {feed.username}
+                </Link>
+                <Link to="/" className=" text-white font-normal me-2">
+                  {feed.caption}
+                </Link>
+                <Link to="/" className=" text-gray-300 font-sm me-2">
+                  more
+                </Link>
+              </div>
+            </div>
+
+
+
+
+
+            <div className="w-full  h-auto text-sm text-gray-200 font-thin ">
+              <Link to="/" className=" text-gray-400 font-normal my-2">
+                View all {feed.commentCount} comments
+              </Link>
+              <div className="w-full h-auto flex items-center justify-between border-b border-gray-500 ">
+                <input type="text" className="w-[90%] h-auto bg-transparent border-none outline-none focus:outline-none text-sm text-gray-400 py-3"  placeholder="Add a comment"/>
+              <Emoji/>
+              </div>
+            </div>
+
+
+
         </div>
       ))}
     </>
