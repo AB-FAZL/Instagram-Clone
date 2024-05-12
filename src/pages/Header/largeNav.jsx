@@ -47,15 +47,15 @@ const LargeNav = () => {
   ];
   return (
     <>
-      <div className=" text-white w-full h-full relative">
-        <Link to="/" className="mb-10 px-2 hidden lg:block">
+      <div className=" text-white w-full h-full relative  md:items-center">
+        <Link to="/" key={"Logo"} className="mb-10 px-2 hidden lg:block">
           <img src={InstagramLogo} alt="" />
         </Link>
-        <Link to="/" className="mb-10 px-2 lg:hidden   hidden md:block">
+        <Link to="/"  key={"Icon"} className="mb-10 px-2 lg:hidden   hidden md:block">
           <img src={InstagramIcon} alt="" />
         </Link>
         <div className="w-full h-auto flex  items-start flex-col gap-y-2">
-          <Link className="w-full h-auto flex items-center flex-row gap-x-4 p-3 bg-transparent  hover:bg-gray-800 rounded-md   ease-out duration-500 group">
+          <Link key={"Homme"}  className="w-full h-auto flex items-center flex-row gap-x-4 p-3 bg-transparent  hover:bg-gray-800 rounded-md   ease-out duration-500 group">
             <img
               src={HomeIcon}
               alt="Home icon"
@@ -67,7 +67,7 @@ const LargeNav = () => {
           {sidebarItems.map((item) => (
             <Link
               to={item.icon}
-              key={item.id}
+              key={item.name}
               className="w-full h-auto flex items-center flex-row gap-x-4 p-3 bg-transparent  hover:bg-gray-800 rounded-md   ease-out duration-500 group"
             >
               <img
@@ -79,7 +79,10 @@ const LargeNav = () => {
               <p className="text-base font-semibold text-white lg:block md:hidden sm:hidden">{item.name}</p>
             </Link>
           ))}
-          <Link className="w-full h-auto flex items-center flex-row gap-x-4 p-3 bg-transparent  hover:bg-gray-800 rounded-md   ease-out duration-500 group">
+
+
+
+          <Link key={"Profile"}  className="w-full h-auto flex items-center flex-row gap-x-4 p-3 bg-transparent  hover:bg-gray-800 rounded-md   ease-out duration-500 group">
             <img
               src="https://source.unsplash.com/random/?profile"
               alt="Profile icon"
@@ -89,7 +92,7 @@ const LargeNav = () => {
             <p className="text-base font-semibold text-white lg:block md:hidden sm:hidden">Profile</p>
           </Link>
           <div className="w-full h-auto absolute bottom-0 left-0 px-0">
-            <Link className="w-full h-auto flex items-center flex-row gap-x-4 p-3 bg-transparent  hover:bg-gray-800 rounded-md   ease-out duration-500 group">
+            <Link key={"Threads"}  className="w-full h-auto flex items-center flex-row gap-x-4 p-3 bg-transparent  hover:bg-gray-800 rounded-md   ease-out duration-500 group">
               <img
                 src={ThreadsIcon}
                 alt="Threads icon"
@@ -98,7 +101,7 @@ const LargeNav = () => {
               />
               <p className="text-base font-semibold text-white lg:block md:hidden sm:hidden">Thresds</p>
             </Link>
-            <Link className="w-full h-auto flex items-center flex-row gap-x-4 p-3 bg-transparent  hover:bg-gray-800 rounded-md   ease-out duration-500 group">
+            <Link key={"MoreIcon"}  className="w-full h-auto flex items-center flex-row gap-x-4 p-3 bg-transparent  hover:bg-gray-800 rounded-md   ease-out duration-500 group">
               <img
                 src={MoreIcon}
                 alt="More icon"

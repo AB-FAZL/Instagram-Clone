@@ -1,6 +1,4 @@
 import React from "react";
-import InstagramIcon from "../../assets/logo/icon.png";
-import InstagramLogo from "../../assets/logo/instagram.png";
 import SearchIcon from "../../assets/navlogo/search.png";
 import HomeIcon from "../../assets/navlogo/home.png";
 import ExploreIcon from "../../assets/navlogo/explore.png";
@@ -8,8 +6,7 @@ import ReelsIcon from "../../assets/navlogo/reel.png";
 import MessageIcon from "../../assets/navlogo/message.png";
 import NotificationsIcon from "../../assets/navlogo/like.png";
 import CreateIcon from "../../assets/navlogo/create.png";
-import ThreadsIcon from "../../assets/navlogo/threads.png";
-import MoreIcon from "../../assets/navlogo/more.png";
+
 import { Link } from "react-router-dom";
 
 const MobileNav = () => {
@@ -88,7 +85,8 @@ const MobileNav = () => {
               className="  rounded-full w-6 h-6 object-cover group-hover:scale-105
              ease-out duration-300 "
             />
-          </Link>
+                  </Link>
+            
         </div>
       </div>
     </>
