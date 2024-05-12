@@ -44,8 +44,8 @@ const MobileNav = () => {
   ];
   return (
     <>
-      <div className="  w-full h-full relative">
-        <div className="w-full h-auto flex  items-start flex-row gap-y-2">
+      <div className="  w-full h-full relative bg-black ">
+        <div className="w-full h-auto flex  items-start flex-row gap-y-2 ">
           <Link className="w-full h-auto flex justify-center items-center flex-row gap-x-4 p-3 bg-transparent  hover:bg-gray-800 rounded-md   ease-out duration-500 group">
             <img
               src={HomeIcon}

@@ -10,8 +10,9 @@ import Comment from "../../../../Components/Icons/Comment/Comment";
 const FeedCard = () => {
   return (
     <>
-      {instagramFeed.map((feed) => (
-        <div id="feed.id" className=" w-full h-auto mb-6">
+      {
+        instagramFeed.map((feed) => (
+        <div key={feed.id} className=" w-full h-auto mb-6">
           <div className="  w-full h-auto flex item-center justify-between mb-2">
             <div className="flex item-center gap-x-2">
               <Link className=" flex items-center justify-center flex-col  flex-shrink-0 ">
@@ -27,16 +28,21 @@ const FeedCard = () => {
             </div>
             <Ellipse />
           </div>
-          <div className="w-full  lg:max-h-[75vh] md:max-h-[70vh] sm:max-h-[65vh] max-h-[50vh] 
-           lg:min-h-[65vh] md:min-h-[55vh] sm:min-h-[50vh]:
-           min-h-[45vh] border border-gray-500 rounded  overflow-hidden mb-3 h-fit">
+          {/*  lg:max-h-[75vh] md:max-h-[70vh] sm:max-h-[65vh] max-h-[50vh] 
+          lg:h-[70vh] md:h-[60vh] sm:h-[50vh] h-[50vh] lg:min-h-[65vh] md:min-h-[55vh] sm:min-h-[50vh]:
+           min-h-[45vh] */}
+          <div className="w-full   border border-gray-500 rounded  overflow-hidden mb-3 ">
             <img src={feed.postImg} alt={feed.caption}
             className="w-full h-auto flex   object-center "/>
-            <div className="w-full h-auto flex item-center justify-between">
-              <div className="flex gap-x-3 items-center"></div>
-            </div>
-            
            </div>
+            <div className="w-full h-auto flex item-center justify-between">
+              <div className="flex gap-x-3 items-center">
+              <Like/>
+                <Comment />
+                <Share/>
+              </div>
+              <Save/>
+            </div>
         </div>
       ))}
     </>
