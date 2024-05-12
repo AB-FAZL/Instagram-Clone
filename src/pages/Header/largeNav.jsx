@@ -47,7 +47,7 @@ const LargeNav = () => {
   ];
   return (
     <>
-      <div className=" text-white w-full h-full relative  md:items-center">
+      <div className=" text-white w-full h-full relative  ">
         <Link to="/" key={"Logo"} className="mb-10 px-2 hidden lg:block">
           <img src={InstagramLogo} alt="" />
         </Link>
