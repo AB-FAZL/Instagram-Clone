@@ -10,7 +10,7 @@ const RecommendedUser = () => {
             
 
             <ProfileNav />
-            <div className=" w-full h-auto my-8 ">
+            <div className=" w-full h-auto my-8  flex flex-row justify-between">
                 <h6 className="text-sm text-gray-400 font-medium">
                     Suggested for you
                 </h6>
@@ -27,7 +27,7 @@ const RecommendedUser = () => {
                             <h6 className=" text-xs text-gray-500 font-normal">Suggested for you</h6>
                         </div>
                     </Link>
-                    <Link to="/" className=" mr-1 hover:text-gray-600 text-blue-400 text-[0.855rem]">{user.follow}</Link>
+                    <Link to="/" className=" mr-1 hover:text-gray-400 text-blue-400 text-[0.855rem]">{user.follow}</Link>
                 </div>
 
             ))}

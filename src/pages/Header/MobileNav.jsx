@@ -78,7 +78,7 @@ const MobileNav = () => {
              ease-out duration-300 "
             />
           </Link>
-          <Link className=" items-center w-full h-auto flex justify-center flex-row gap-x-4 p-3 bg-transparent  hover:bg-gray-800 rounded-md   ease-out duration-500 group">
+          <Link to="/Profile" className=" items-center w-full h-auto flex justify-center flex-row gap-x-4 p-3 bg-transparent  hover:bg-gray-800 rounded-md   ease-out duration-500 group">
             <img
               src="https://source.unsplash.com/random/?profile"
               alt="Profile icon"

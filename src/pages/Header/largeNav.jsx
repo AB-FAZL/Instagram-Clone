@@ -82,7 +82,7 @@ const LargeNav = () => {
 
 
 
-          <Link key={"Profile"}  className="w-full h-auto flex items-center flex-row gap-x-4 p-3 bg-transparent  hover:bg-gray-800 rounded-md   ease-out duration-500 group">
+          <Link key={"Profile"} to="/Profile" className="w-full h-auto flex items-center flex-row gap-x-4 p-3 bg-transparent  hover:bg-gray-800 rounded-md   ease-out duration-500 group">
             <img
               src="https://source.unsplash.com/random/?profile"
               alt="Profile icon"

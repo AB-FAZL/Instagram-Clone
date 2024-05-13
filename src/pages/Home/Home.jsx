@@ -5,6 +5,7 @@ import MobileNav from "../Header/MobileNav";
 import TextEllips from "./Stories/StoriesDara/TextEllips";
 import { Routes, Route } from "react-router-dom";
 import Feed from "./Feed/Feed";
+import {Main} from "../Profile/Main";
 const Home = () => {
   return (
     <>
@@ -17,6 +18,8 @@ const Home = () => {
         </div>
         <Routes >
           <Route exact path="/" element={<Feed />}></Route>
+          <Route exact path="/Profile" element={<Main />}></Route>
+
         </Routes>
       </div>
     </>
