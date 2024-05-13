@@ -10,5 +10,4 @@ An Instagram clone that replicates the core features of the original Instagram a
 
 - React.js
 - Tailwind CSS
-- Firebase (for backend services)
 
