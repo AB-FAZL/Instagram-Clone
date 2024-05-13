@@ -1,8 +1,14 @@
-# React + Vite
+# Instagram Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a responsive Instagram clone built with React and Tailwind CSS.
 
-Currently, two official plugins are available:
+## Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+An Instagram clone that replicates the core features of the original Instagram application with a focus on responsive design. This project utilizes the power of React for efficient UI rendering and Tailwind CSS for a sleek, mobile-first design.
+
+## Technologies Used
+
+- React.js
+- Tailwind CSS
+- Firebase (for backend services)
+
